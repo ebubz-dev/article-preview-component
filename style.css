@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    color:hsl(214, 17%, 51%);
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    margin: 0;
+}
+main {
+    display: flex;
+    margin: auto;
+}
+h1 {
+    margin: 0;
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+#img {
+    width: auto;
+    height: 50px;
+    border-radius: 50%;
+}
+article p {
+    font-weight: 500;
+    font-size: 11px;
+    opacity: 0.8;
+}    
+article {
+    padding: 35px;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+}
+#flex {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+}
+#flex a {
+    margin: auto;
+    margin-right: 45px;
+    background-color: hsl(210, 46%, 95%);
+    width: 35px;
+    height: 35px;
+    padding: 1%;
+    text-align: center;
+    border-radius: 50%;
+}
+#name {
+    display: flex;
+    flex-direction: column;
+} 
+#name p {
+    margin: auto;
+    margin-left: 20px;
+    max-width: max-content;
+    font-weight: 400;
+}
+#name p b {
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+}
+#sharedesk {
+    display: none;
+    justify-content: space-around;
+    background-color: hsl(217, 19%, 35%);
+    width: 250px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 8rem;
+    left: 58%;
+    box-shadow: 0 8px 4px #eee;
+}
+#sharedesk h2{
+    font-size: 11px;
+    letter-spacing: 0.3rem;
+    margin: 0 0 0 15px;
+    text-align: center;
+    color: hsl(210, 46%, 95%);
+    font-weight: lighter;
+}
+#sharedesk::after {
+    content: '';
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 10px solid hsl(217, 19%, 35%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 30px;
+    left: -45%;
+    filter: drop-shadow(0 8px 4px #eee);
+}
+#sharedesk img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+@media screen and (max-width: 1023px){
+    main {
+        flex-direction: column;
+        margin: 30px auto;
+    }
+    article {
+        display: block;
+        height: 300px;
+        width: 400px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    #drawers {
+        width: 400px;
+        height: 250px;
+        object-fit: cover;
+        object-position: 0 -20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    h1 {
+        font-size: 18px;
+        max-width: 25ch;
+    }
+    article p {
+        width: 31.5ch;
+    }
+    #sharedesktwo {
+        display: none;
+        justify-content: space-between;
+        background-color: hsl(217, 19%, 35%);
+        width: 400px;
+        align-items: center;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 8px 4px #eee;
+    }
+    #sharedesktwo h2{
+        font-size: 11px;
+        letter-spacing: 0.3rem;
+        margin: 0 0 0 15px;
+        text-align: center;
+        color: hsl(210, 46%, 95%);
+        font-weight: lighter;
+    }
+    #sharedesktwo img {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+    }
+    #flex {
+        display: flex;
+        width: 360px;
+    }
+    #share2 {
+        margin-left: 80px;
+        margin-right: 50px;
+        background-color: hsl(210, 46%, 95%);
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        padding: 1.2% 0 0 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #article {
+        height: 270px;
+        padding-right: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    #drawers {
+        height: 270px;
+        width: 270px;
+        object-fit: cover;
+        object-position: -5px 0;
+        margin: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    h1 {
+        font-size: 20px;
+        width: 27ch;
+    }
+    article p {
+        width: 46ch;
+    }
+    #share {
+        margin: 6.5px;
+    }
+    #share2 {
+        display: none;
+    }
+    #sharedesktwo {
+        display: none;
+    }
+}
